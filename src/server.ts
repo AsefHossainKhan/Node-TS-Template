@@ -1,6 +1,12 @@
 import express from "express";
 import config from "./config";
+import sequelize from "./db-connection";
 import { expressSetup } from "./utils";
+
+(async () => {
+  await sequelize; // Establishes connection to the database
+  // await sequelize.sync();
+})();
 
 const app = express();
 expressSetup(app);

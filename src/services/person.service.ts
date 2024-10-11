@@ -1,14 +1,15 @@
+import Person from "../models/Person";
+
 interface PersonCreate {
   name: string;
 }
 class PersonService {
   async create(person: PersonCreate) {
-    let s;
-    return "Person Created";
+    return await Person.create(person);
   }
 
   async findAll() {
-    return [{ name: "John Doe" }, { name: "Jane Doe" }];
+    return await Person.findAll();
   }
 }
 
