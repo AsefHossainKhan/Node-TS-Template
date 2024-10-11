@@ -1,3 +1,6 @@
+# Node + TS + Express
+A typescript nodejs project with express setup. So that one can easily bootstrap their project and start working.
+
 ### Create environment files
 2 Environment files should be created. They will be named `.env` and `.env.production`, and should be placed in the root directory of the project.
 
